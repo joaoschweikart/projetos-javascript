@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala&family=Titillium+Web&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: white;
+}
+
+.cabecalho {
+  font-family: Sarala, sans-serif;
+  font-size: 25pt;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+.calculadora {
+  width: 500px;
+  height: 500px;
+  margin: 3% auto;
+  padding: 20px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-family: Sarala, sans-serif;
+  font-size: 1.8rem;
+}
+
+.tela {
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  height: 85px;
+  padding-right: 15px;
+  padding-top: 10px;
+  text-align: right;
+  font-size: 2.5rem;
+  overflow-x: auto;
+  transition: all .2s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.tela:hover {
+  border: 1px solid #bbb;
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.operacoes button, .numbers button {
+  display: inline-block;
+  border: 1px solid #bbb;
+  border-radius: 1px;
+  width: 105px;
+  height: 60px;
+  font-size: 20pt;
+  text-align: center;
+  padding: 10px;
+  margin: 8px 4px 8px 0;
+  cursor: pointer;
+  background-color: rgb(209, 202, 202);
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.operacoes button:hover, .numbers button:hover {
+  background-color: white;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #aaa;
+}
+
+.operacoes button:active, .numbers button:hover {
+  font-weight: bold;
+}
+
+.numbers button {
+  background-color: white;
+}
+
+.numbers button:hover {
+  background-color: rgb(209, 202, 202);
+}
+
+.left-painel {
+  display: inline-block;
+}
+
+button.resultado {
+  font-size: 20pt;
+  display: inline-block;
+  border: 1px solid #3079ED;
+  border-radius: 1px;
+  width: 105px;
+  height: 290px;
+  text-align: center;
+  padding: 100px 0px 100px 0px;
+  margin: 8px 4px 10px 0;
+  vertical-align: top;
+  cursor: pointer;
+  color: #FFF;
+  background-color: #4d90fe;
+  transition: all .2s ease-in-out;
+}
+
+button.resultado:hover {
+  background-color: #307CF9;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #1857BB;
+}
+
+button.resultado:active {
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+  background-color: rgb(151, 151, 151);
+  font-family: Sarala, sans-serif;
+  color: black;
+  height: 80px;
+}
+
+footer a {
+  color: white;
+}

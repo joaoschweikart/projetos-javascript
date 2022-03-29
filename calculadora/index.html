@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CALCULADORA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="cabecalho">CALCULADORA</header>
+  <main class="conteudos">
+    <section class="calculadora">
+      <div class="tela" id="tela"></div>
+      <div class="botoes">
+        <div class="operacoes">
+          <button onclick="insert('+')">+</button>
+          <button onclick="insert('-')">-</button>
+          <button onclick="insert('*')">&times;</button>
+          <button onclick="insert('/')">&divide;</button>
+        </div>
+        <div class="left-painel">
+          <div class="numbers">
+            <button onclick="insert(7)">7</button>
+            <button onclick="insert(8)">8</button>
+            <button onclick="insert(9)">9</button>
+          </div>
+          <div class="numbers">
+            <button onclick="insert(4)">4</button>
+            <button onclick="insert(5)">5</button>
+            <button onclick="insert(6)">6</button>
+          </div>
+          <div class="numbers">
+            <button onclick="insert(1)">1</button>
+            <button onclick="insert(2)">2</button>
+            <button onclick="insert(3)">3</button>
+          </div>
+          <div class="numbers">
+            <button onclick="insert(0)">0</button>
+            <button onclick="insert('.')">.</button>
+            <button id="clear" onclick="clean()">C</button>
+          </div>
+        </div>
+      <button class="resultado" id="resultado" onclick="result()">=</button>
+      </div>
+    </section>
+  </main>
+  <footer class="rodape">
+      <p>Copyright &copy; 2022 - by João Vitor Schweikart</p>
+      <p><a href="https://www.instagram.com/joaoschweikart/" target="_blank">@joaoschweikart</a> | <a href="mailto:joaobernardonschweikart@gmail.com?subjecttext">joaobernardonschweikart@gmail.com</a><p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

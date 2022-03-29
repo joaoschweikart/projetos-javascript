@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLARE</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <!--MAIN QUE ABRANGE TODOS OS CONTEÚDOS DO SITE-->
+    <main class="conteudos">
+        <!--SEÇÃO QUE ABRANGE APENAS O 1º CONTEÚDO DO SITE (SLIDER)-->
+        <section class="slider">
+            <!--DIV QUE ENGLOBA A CONSTRUÇÃO COMPLETA DOS SLIDES-->
+            <div class="slides">
+                <!--INPUTS QUE SELECIONAM CADA IMAGEM-->
+                <input type="radio" name="slide" id="slide1" checked> 
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+                <input type="radio" name="slide" id="slide4">
+                <!--IMAGENS DO CARROSSEL-->
+                <img class="slide s1" src="imagens-acessorios/Capturar.JPG" alt="Pulseira 1">           
+                <img class ="slide" src="imagens-acessorios/Capturar1.JPG" alt="Pulseira 2">
+                <img class ="slide" src="imagens-acessorios/Capturar2.JPG" alt="Pulseira 3">
+                <img class ="slide" src="imagens-acessorios/Capturar3.JPG" alt="Pulseira 4">
+                <!--BACKGROUNDS DOS LABELS QUANDO SELECIONADOS-->
+                <div class="backgrounds">
+                    <div class="background1"></div>
+                    <div class="background2"></div>
+                    <div class="background3"></div>
+                    <div class="background4"></div>
+                </div>
+                <!--BOTÕES LABEL QUE SE REFEREM AOS INPUTS ESCONDIDOS-->
+                <div class="navegacao">
+                    <label for="slide1" class="barras"></label>
+                    <label for="slide2" class="barras"></label>
+                    <label for="slide3" class="barras"></label>
+                    <label for="slide4" class="barras"></label>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Copyright &copy; 2022 - by João Vitor Schweikart</p>
+        <p><a href="https://www.instagram.com/joaoschweikart/" target="_blank">@joaoschweikart</a> | <a href="mailto:joaobernardonschweikart@gmail.com?subjecttext">joaobernardonschweikart@gmail.com</a><p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

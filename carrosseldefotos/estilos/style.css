@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala&family=Titillium+Web&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(45deg, #0f5a5e 0%, #1c92f3 46%, #0b5592 100%);
+}
+
+.conteudos {
+    font-family: Sarala, sans-serif;
+    color: white;
+    font-weight: 200px;
+}
+
+.slider {
+    height: 500px;
+    width: 410px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 40px auto 40px auto;
+}
+
+.navegacao {
+    position: absolute;
+    margin-top: 445px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.barras {
+    width: 70px;
+    height: 17px;
+    border: 2px solid white;
+    margin: 15px 0px 0px 26px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.barras:hover {
+    background-color: white;
+}
+
+.slides input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    flex-direction: row;
+    width: 400%;
+    height: 100%;
+}
+
+.slide {
+    width: 25%;
+    transition: 1s;
+}
+
+.slide img {
+    width: 410px;
+    height: 500px;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -25%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -50%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -75%;
+}
+
+.backgrounds {
+    position: absolute;
+    margin-top: 445px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.backgrounds div {
+    width: 70px;
+    height: 17px;
+    border: 2px solid white;
+    margin: 15px 0px 0px 26px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#slide1:checked ~ .backgrounds .background1{
+    background-color: white;
+}
+
+#slide2:checked ~ .backgrounds .background2{
+    background-color: white;
+}
+
+#slide3:checked ~ .backgrounds .background3{
+    background-color: white;
+}
+
+#slide4:checked ~ .backgrounds .background4{
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    background-color: white;
+    font-family: Sarala, sans-serif;
+    color: black;
+    font-weight: 200px;
+}
