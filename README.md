@@ -1,2 +1,2 @@
-# projetos-javascript
+# Projetos JavaScript
  Projetos em JavaScript interessantes
